@@ -10,14 +10,14 @@ public class Computer {
     private float processorClockRateGHz;
     private float randomAccessMemorySizeGb;
 		
-		//Variables which are specific for desctop computers
+		//Variables which are specific for desktop computers
 		private int fixedMemorySizeGb;
     private String operationSystem;
 		private String computerName;
     
     Computer(String computer_type, String processor_type) {
-        computerType = computer_type;
-				processorType = processor_type;
+        this.computerType = computer_type;
+				this.processorType = processor_type;
     }
 
     void powerOn(){
@@ -50,28 +50,28 @@ public class Computer {
     }
 		
 		//Setters
-		void setProcessorClockRateGHz(float processor_clock_rate_ghz) {
-			if (processor_clock_rate_ghz > 0)
-				processorClockRateGHz = processor_clock_rate_ghz;
+		void setProcessorClockRateGHz(float processorClockRateGHz) {
+			if (processorClockRateGHz > 0)
+				this.processorClockRateGHz = processorClockRateGHz;
 		}
 		
-		void setRandomAccessMemorySizeGb(float random_access_memory_size_gb) {
-			if (random_access_memory_size_gb > 0)
-				randomAccessMemorySizeGb = random_access_memory_size_gb;
+		void setRandomAccessMemorySizeGb(float randomAccessMemorySizeGb) {
+			if (randomAccessMemorySizeGb > 0)
+				this.randomAccessMemorySizeGb = randomAccessMemorySizeGb;
 		}
 		
-		void setFixedMemorySizeGb(int fixed_memory_size_gb) {
-			fixedMemorySizeGb = fixed_memory_size_gb;
+		void setFixedMemorySizeGb(int fixedMemorySizeGb) {
+			this.fixedMemorySizeGb = fixedMemorySizeGb;
 		}
 		
-		void setOperationSystem(String operation_system) {
-			if (!operation_system.isEmpty())
-				operationSystem = operation_system;
+		void setOperationSystem(String operationSystem) {
+			if (!operationSystem.isEmpty())
+				this.operationSystem = operationSystem;
 		}
 		
-		void setComputerName(String computer_name) {
-			if (!computer_name.isEmpty())
-				computerName = computer_name;
+		void setComputerName(String computerName) {
+			if (!computerName.isEmpty())
+				this.computerName = computerName;
 		}
 		
 		//Getters
